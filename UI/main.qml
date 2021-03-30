@@ -5,7 +5,7 @@ import QtQuick.Controls 2.15
 ApplicationWindow {
     visible: true
     width: 312
-    height: 282
+    height: 312
     color: "transparent"
 
     background: Rectangle {
