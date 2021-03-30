@@ -33,4 +33,15 @@ ApplicationWindow {
 
     }
 
+    Drawer {
+        width: 24
+        height: 48
+        visible: true
+
+        Text {
+            text: "Yep"
+        }
+
+    }
+
 }
