@@ -10,12 +10,14 @@ ApplicationWindow {
     color: "transparent"
     flags: Qt.Window | Qt.FramelessWindowHint
 
+    property color bg_color: "gold"
+
     background: Rectangle {
         id: bg
         anchors.centerIn: parent
         width: parent.width - 24
         height: parent.height - 24
-        color: "gold"
+        color: bg_color
 
         layer.enabled: true
         layer.effect: DropShadow {
