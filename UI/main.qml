@@ -5,8 +5,8 @@ import QtGraphicalEffects 1.0
 
 ApplicationWindow {
     visible: true
-    width: 312
-    height: 312
+    width: 344
+    height: 350
     color: "transparent"
     flags: Qt.Window | Qt.FramelessWindowHint
 
