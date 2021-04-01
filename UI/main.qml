@@ -15,19 +15,19 @@ ApplicationWindow {
     background: Rectangle {
         id: bg
         anchors.centerIn: parent
-        width: parent.width - 24
-        height: parent.height - 24
+        width: parent.width - 38
+        height: parent.height - 38
         color: bg_color
 
         layer.enabled: true
         layer.effect: DropShadow {
             anchors.fill: bg
-            horizontalOffset: 0
-            verticalOffset: 0
-            //spread: 1
-            radius: 12
+            horizontalOffset: 3
+            verticalOffset: 3
+            spread: 0.1
+            radius: 28
             samples: (radius * 2) + 1
-            color: "#50000000"
+            color: "#36000000"
             source: bg
         }
 
@@ -36,7 +36,7 @@ ApplicationWindow {
     Drawer {
         width: 24
         height: 48
-        visible: true
+        visible: false
 
         Text {
             text: "Yep"
