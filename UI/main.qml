@@ -71,15 +71,21 @@ ApplicationWindow {
         }
 
         Rectangle {
+            id: editable_cont
             anchors.top: header.bottom
             anchors.bottom: footer.top
             width: parent.width
             color: "transparent"
 
-            TextEdit {
+            ScrollView {
                 anchors.fill: parent
-                clip: true
-                focus: true
+
+                TextEdit {
+                    width: parent.width
+                    height: parent.height
+                    clip: true
+                    focus: true
+                }
             }
 
         }
