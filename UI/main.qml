@@ -17,7 +17,6 @@ ApplicationWindow {
         anchors.centerIn: parent
         width: parent.width - 38
         height: parent.height - 38
-        color: bg_color
 
         layer.enabled: true
         layer.effect: DropShadow {
@@ -35,12 +34,11 @@ ApplicationWindow {
 
     }
 
-
     Drawer {
         width: bg.width
         height: 100
         modal: true
-        visible: true
+        visible: false
         edge: Qt.TopEdge
 
         Overlay.modal: Rectangle {
@@ -55,6 +53,17 @@ ApplicationWindow {
             implicitWidth: parent.width
             implicitHeight: parent.height
         }
+
+    }
+
+
+    Rectangle {
+        x: 19
+        y: 19
+        width: bg.width
+        height: bg.height
+        color: bg_color
+
 
     }
 
