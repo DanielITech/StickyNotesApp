@@ -56,7 +56,6 @@ ApplicationWindow {
 
     }
 
-
     Rectangle {
         x: 19
         y: 19
@@ -69,6 +68,23 @@ ApplicationWindow {
             width: parent.width
             height: 34
             color: bg_color
+        }
+
+        Rectangle {
+            id: footer
+            anchors.bottom: parent.bottom
+            width: parent.width
+            height: 40
+            color: "transparent"
+
+            Rectangle {
+                anchors.top: parent.top
+                width: parent.width
+                height: 1
+                color: bg_color
+            }
+
+
         }
 
     }
