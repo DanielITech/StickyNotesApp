@@ -75,6 +75,13 @@ ApplicationWindow {
             anchors.bottom: footer.top
             width: parent.width
             color: "transparent"
+
+            TextEdit {
+                anchors.fill: parent
+                clip: true
+                focus: true
+            }
+
         }
 
         Rectangle {
