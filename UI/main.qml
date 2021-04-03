@@ -71,6 +71,13 @@ ApplicationWindow {
         }
 
         Rectangle {
+            anchors.top: header.bottom
+            anchors.bottom: footer.top
+            width: parent.width
+            color: "transparent"
+        }
+
+        Rectangle {
             id: footer
             anchors.bottom: parent.bottom
             width: parent.width
