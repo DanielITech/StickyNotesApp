@@ -31,17 +31,32 @@ ApplicationWindow {
             source: bg
         }
 
+
+
     }
 
-    Drawer {
-        width: 24
-        height: 48
-        visible: false
 
-        Text {
-            text: "Yep"
+    Drawer {
+        width: bg.width
+        height: 100
+        modal: true
+        visible: true
+        edge: Qt.TopEdge
+
+        Overlay.modal: Rectangle {
+            anchors.fill: parent
+            anchors.margins: 19
+            color: "#77ffffff"
+        }
+
+        background: Rectangle {
+            x: 19
+            y: 19
+            implicitWidth: parent.width
+            implicitHeight: parent.height
         }
 
     }
+
 
 }
