@@ -10,7 +10,7 @@ ApplicationWindow {
     color: "transparent"
     flags: Qt.Window | Qt.FramelessWindowHint
 
-    property color bg_color: "gold"
+    property color bg_color: "grey"
 
     background: Rectangle {
         id: bg
@@ -62,8 +62,14 @@ ApplicationWindow {
         y: 19
         width: bg.width
         height: bg.height
-        color: bg_color
+        color: Qt.lighter(bg_color)
 
+        Rectangle {
+            id: header
+            width: parent.width
+            height: 34
+            color: bg_color
+        }
 
     }
 
