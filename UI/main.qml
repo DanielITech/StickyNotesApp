@@ -10,7 +10,7 @@ ApplicationWindow {
     color: "transparent"
     flags: Qt.Window | Qt.FramelessWindowHint
 
-    property color bg_color: "grey"
+    property color bg_color: "gold"
 
     background: Rectangle {
         id: bg
@@ -77,14 +77,35 @@ ApplicationWindow {
             width: parent.width
             color: "transparent"
 
-            ScrollView {
-                anchors.fill: parent
+            Rectangle {
+                width: parent.width
+                height: parent.height
+                clip: true
+                focus: true
+                color: "transparent"
 
                 TextEdit {
+                    id: editable
+                    //x: -sb.position * width
+                    y: -sb.position * height
                     width: parent.width
-                    height: parent.height
-                    clip: true
+                    height: 400
                     focus: true
+
+                }
+
+                ScrollBar {
+                    id: sb
+                    visible: true
+                    parent: parent
+                    x: parent.width - 12
+                    y: 0
+                    size: parent.height / editable.height
+                    policy: ScrollBar.AlwaysOn
+                    anchors.right: parent.right
+                    anchors.top: parent.top
+                    anchors.bottom: parent.bottom
+                    orientation: Qt.Vertical
                 }
             }
 
