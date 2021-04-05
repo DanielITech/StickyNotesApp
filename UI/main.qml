@@ -3,6 +3,8 @@ import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15
 import QtGraphicalEffects 1.0
 
+import "customs" as Cust
+
 ApplicationWindow {
     id: mainWindow
     visible: true
@@ -120,6 +122,7 @@ ApplicationWindow {
                     font.pixelSize: 14
                     padding: 12
                     wrapMode: TextEdit.Wrap
+                    selectByMouse: true
 
                 }
 
@@ -152,6 +155,22 @@ ApplicationWindow {
                 width: parent.width
                 height: 1
                 color: bg_color
+
+                Row {
+                    anchors.fill: parent
+                    anchors.margins: 4
+                    spacing: 12
+
+                    Cust.CustomButton {
+                        text: "B"
+                    }
+                    Cust.CustomButton {
+                        text: "I"
+                    }
+
+
+                }
+
             }
 
 
