@@ -4,11 +4,15 @@ import QtQuick.Controls 2.15
 import QtGraphicalEffects 1.0
 
 ApplicationWindow {
+    id: mainWindow
     visible: true
     width: 344
     height: 350
     color: "transparent"
     flags: Qt.Window | Qt.FramelessWindowHint
+
+    property int prevX
+    property int prevY
 
     property color bg_color: "gold"
 
@@ -68,6 +72,27 @@ ApplicationWindow {
             width: parent.width
             height: 34
             color: bg_color
+
+            MouseArea {
+                anchors.fill: parent
+                //hoverEnabled: true
+
+                onPressed: {
+                    prevX = mouseX
+                    prevY = mouseY
+                }
+
+                onMouseXChanged: {
+                    var dx = mouseX - prevX
+                    mainWindow.setX(mainWindow.x + dx)
+                }
+
+                onMouseYChanged:  {
+                    var dy = mouseY - prevY
+                    mainWindow.setY(mainWindow.y + dy)
+                }
+            }
+
         }
 
         Rectangle {
