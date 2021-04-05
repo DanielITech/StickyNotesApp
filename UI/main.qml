@@ -91,6 +91,10 @@ ApplicationWindow {
                     width: parent.width
                     height: 400
                     focus: true
+                    font.family: "Roboto"
+                    font.pixelSize: 14
+                    padding: 12
+                    wrapMode: TextEdit.Wrap
 
                 }
 
