@@ -101,7 +101,7 @@ ApplicationWindow {
                     x: parent.width - 12
                     y: 0
                     size: parent.height / editable.height
-                    policy: ScrollBar.AlwaysOn
+                    //policy: ScrollBar.AlwaysOn
                     anchors.right: parent.right
                     anchors.top: parent.top
                     anchors.bottom: parent.bottom
