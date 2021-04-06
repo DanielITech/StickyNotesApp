@@ -7,7 +7,7 @@ Button {
     background: Rectangle {
         implicitWidth: 128
         implicitHeight: 50
-        color: parent.hovered ? Qt.darker(bg_color): "white"
+        color: parent.hovered ? "#eee": "white"
     }
 
 }
