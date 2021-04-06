@@ -161,10 +161,11 @@ ApplicationWindow {
                     anchors.margins: 4
                     spacing: 12
 
-                    Cust.CustomButton {
+                    Cust.CustomToolButton {
                         text: "B"
                     }
-                    Cust.CustomButton {
+
+                    Cust.CustomToolButton {
                         text: "I"
                     }
 
