@@ -41,11 +41,51 @@ ApplicationWindow {
     }
 
     Drawer {
+        id: drawer
         width: bg.width
-        height: 100
+        height: 150
         modal: true
-        visible: false
+        visible: true
         edge: Qt.TopEdge
+
+        Column {
+            width: parent.width
+            height: parent.height
+            x: 19
+            y: 19
+            spacing: 0
+
+            Row {
+                width: parent.width
+                height: 48
+                clip: true
+
+                Cust.ColorButton {
+                    color: "gold"
+                }
+                Cust.ColorButton {
+                    color: "green"
+                }
+                Cust.ColorButton {
+                    color: "yellow"
+                }
+                Cust.ColorButton {
+                    color: "brown"
+                }
+                Cust.ColorButton {
+                    color: "teal"
+                }
+                Cust.ColorButton {
+                    color: "grey"
+                }
+                Cust.ColorButton {
+                    color: "darkgrey"
+                }
+
+            }
+
+        }
+
 
         Overlay.modal: Rectangle {
             anchors.fill: parent
