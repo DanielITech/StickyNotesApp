@@ -75,6 +75,27 @@ ApplicationWindow {
             height: 34
             color: bg_color
 
+            RowLayout {
+                anchors.fill: parent
+
+                Cust.CustomButton {
+                    text: "+"
+                }
+
+                Row {
+                    Layout.alignment: Qt.AlignRight
+
+                    Cust.CustomButton {
+                        text: "-"
+                    }
+
+                    Cust.CustomButton {
+                        text: "="
+                    }
+
+                }
+            }
+
             MouseArea {
                 anchors.fill: parent
                 //hoverEnabled: true
