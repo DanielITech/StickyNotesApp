@@ -84,6 +84,14 @@ ApplicationWindow {
 
             }
 
+            Cust.OptionButton {
+                text: "Notes list"
+            }
+
+            Cust.OptionButton {
+                text: "Delete Note"
+            }
+
         }
 
 
