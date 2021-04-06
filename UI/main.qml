@@ -57,7 +57,7 @@ ApplicationWindow {
 
             Row {
                 width: parent.width
-                height: 48
+                height: 50
                 clip: true
 
                 Cust.ColorButton {

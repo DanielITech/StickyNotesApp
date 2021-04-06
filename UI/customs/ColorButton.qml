@@ -8,8 +8,8 @@ Button {
 
     background: Rectangle {
         implicitWidth: 44
-        implicitHeight: 52
-        color:btn.color
+        implicitHeight: 50
+        color: btn.color
     }
 
 }
